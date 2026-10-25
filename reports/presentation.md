@@ -22,7 +22,7 @@
 - مجموعة صغيرة من الوجبات تمثل أكثر من أربعة أخماس الطلب المسجل.
 - تظهر فروق وصفية بين أنواع المراكز في متوسط الطلب الأسبوعي لكل مركز.
 - **مصدر:** جداول الفئات والوجبات والمراكز، قسم مؤشرات الطلب والتذبذب، خلية الكود 4.
-- **الرسوم:** [الطلب الأسبوعي](figures/weekly_demand.png)، [الطلب حسب الفئة](figures/category_demand.png).
+- **الرسوم:** [الطلب الأسبوعي](figures/weekly_demand.svg)، [الطلب حسب الفئة](figures/category_demand.svg).
 
 ## شريحة: الترويج والخصم والتذبذب
 
@@ -30,7 +30,7 @@
 - يظهر ارتباط Spearman موجباً ضعيفاً بين الخصم والطلبات؛ لا يثبت هذا أن الخصم أحدث زيادة.
 - تظهر بعض سلاسل المركز-الوجبة تذبذباً مرتفعاً، ما يستحق مراجعة تشغيلية ومقارنة مع بيانات المخزون قبل قرار الشراء.
 - **مصدر:** قسم الاختبارات الإحصائية ومؤشرات الطلب والتذبذب، خلايا الكود 4–5.
-- **الرسوم:** [البريد الترويجي](figures/email_promotion_orders_boxplot.png)، [الظهور على الصفحة الرئيسية](figures/homepage_featured_orders_boxplot.png)، [الخصم والطلب](figures/discount_vs_orders.png)، [الحجم والتذبذب](figures/demand_volume_vs_variability.png).
+- **الرسوم:** [البريد الترويجي](figures/email_promotion_orders_boxplot.svg)، [الظهور على الصفحة الرئيسية](figures/homepage_featured_orders_boxplot.svg)، [الخصم والطلب](figures/discount_vs_orders.svg)، [الحجم والتذبذب](figures/demand_volume_vs_variability.svg).
 
 ## شريحة: التوصيات والحدود
 
