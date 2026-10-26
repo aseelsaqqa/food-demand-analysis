@@ -1,5 +1,10 @@
 # Source data
 
-Place the provided `train.csv`, `fulfilment_center_info.csv`, and `meal_info.csv` files in `data/raw/` locally before running the analysis. `test.csv` is optional and reserved for forecasting.
+Place the provided source CSV files in `data/raw/` locally to run the analysis:
 
-Raw files are intentionally excluded from Git and must not be changed or uploaded. This repository includes no source data.
+- `train.csv`
+- `fulfilment_center_info.csv`
+- `meal_info.csv`
+- `test.csv` (optional; reserved for forecasting)
+
+The raw files are intentionally excluded from version control and must not be modified or uploaded. The repository includes no source data.

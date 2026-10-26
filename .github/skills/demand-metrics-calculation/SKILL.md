@@ -14,18 +14,18 @@ Calculate reproducible operational demand indicators from the project's order da
 3. Before aggregation, identify the row grain and verify the join keys. After every join and every cleaning, drop, or filtering operation, print the number of rows and columns and, where available, the sum of `num_orders`; compare before/after values and explain changes.
 4. Use documented definitions:
    - Total orders: sum of `num_orders`.
-   - Weekly total and mean weekly orders: group by `week` and sum `num_orders`, then summarize weekly totals.
+   - Weekly total and mean weekly orders: group by `week` and sum `num_orders`, then summarize those weekly totals.
    - Estimated revenue: `checkout_price * num_orders`; label it an estimate, not profit.
-   - Relative discount: `(base_price - checkout_price) / base_price` only when `base_price > 0`.
-   - Promotion share: fraction of observed rows with the relevant flag equal to `1`; distinguish row share from order-weighted share.
-   - Demand variability: standard deviation divided by mean for a clearly stated aggregation unit. Do not replace absent weeks with zero unless justified.
-5. For top-demand shares, sort by summed orders and show the cumulative share, including the item crossing the threshold.
-6. Display intermediate checks, state units and denominators, and round only presentation values.
-7. Cite every reported metric to the notebook section and code cell. Describe observational results without implying causation.
+   - Relative discount: `(base_price - checkout_price) / base_price` only when `base_price > 0`; state how invalid or missing values are handled.
+   - Promotion share: fraction of observed rows with the relevant promotion flag equal to `1`; distinguish row share from order-weighted share.
+   - Demand variability: standard deviation divided by mean orders for a clearly stated aggregation unit. Do not replace absent weeks with zero unless the data definition justifies it.
+5. For top-demand shares, sort the requested entities by summed orders and show the cumulative share, including the item that crosses the chosen threshold.
+6. Display intermediate tables or assertions needed to check totals and arithmetic. Avoid unexplained rounding; keep adequate precision in calculations and round only presentation values.
+7. Cite every reported metric to the notebook section and code cell that computes it. Describe observational results without implying causation.
 
 ## Output checklist
 
 - Metric definition, grain, units, and denominator are explicit.
-- Join and cleaning counts and totals are traceable.
-- Results are reproducible, with no changes to `data/raw/`.
-- Recommendations state their evidence and limitations.
+- Row/column counts and order totals remain traceable through joins and cleaning.
+- Results are reproducible from the notebook, with no changes to `data/raw/`.
+- Any recommendation states its evidence and the limits of the metric.

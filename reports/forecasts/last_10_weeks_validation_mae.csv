@@ -1,0 +1,4 @@
+model,mae,validation_rows
+previous_week_baseline,81.78281325012001,31245
+random_forest,107.77173239151192,31245
+linear_regression,126.44759246179149,31245
